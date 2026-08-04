@@ -91,9 +91,19 @@ guia): `doc/variante-kling-v2.md`.
 
 ## Skills
 
+Vivem em `skills/`, dentro deste repo:
+
 - **`making-of-tanque-ondas`** — o caso AVCC: destruição de maquete em tanque de ondas.
 - **`making-of-simulacao`** — genérica: qualquer simulação prática (fogo, terremoto, explosão,
   neve, vento) com a mesma estrutura de dois estágios.
+
+Para instalar no Claude Code, aponte `~/.claude/skills/` para elas por symlink — assim editar
+num lugar edita no outro e a skill nunca sai de sincronia com o código que ela descreve:
+
+```bash
+ln -s "$PWD/skills/making-of-tanque-ondas" ~/.claude/skills/making-of-tanque-ondas
+ln -s "$PWD/skills/making-of-simulacao"    ~/.claude/skills/making-of-simulacao
+```
 
 ## Pré-requisitos
 
@@ -106,4 +116,6 @@ guia): `doc/variante-kling-v2.md`.
 doc/       guia AVCC original (PT/EN), receitas medidas, fotos de referência
 prompts/   prompts prontos, em inglês, validados
 scripts/   kf_a.py · render_kling.sh · render_agnes.py
+skills/    making-of-tanque-ondas · making-of-simulacao
+guia/      a página publicada (landing + guia) + assets
 ```
