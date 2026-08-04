@@ -38,6 +38,35 @@ entende "transformar esta foto", não "construir uma maquete disto" — e nem o 
 com os 15 negativos vira esse jogo (o próprio negativo "buildings dissolving instead of
 physically breaking" foi violado no teste A).
 
+## Correções que vieram depois (poa1 e poa3 falharam)
+
+Receita B foi escrita com **um** caso validado (poa2 16:9). Aplicada em poa1 e poa3 ela falhou —
+placar honesto: **2 de 4** com as correções abaixo aplicadas. O achado dos dois estágios
+(maquete como primeiro frame) continua sustentado pelo teste A vs B; "a receita produz um clipe
+bom" não estava.
+
+O que cada falha ensinou:
+
+| falha | causa | correção |
+|---|---|---|
+| destruição acontecia **antes** da onda chegar (poa3) | o prompt descrevia o estado final e confiava no modelo pra ordenar | **regra de causalidade** (abaixo) — regra espacial, não linha do tempo |
+| equipe **dentro** da área da maquete (poa3) | no `kf_a` a equipe e um rig de câmera encostavam na borda do modelo; imagem vence texto | vão livre de vários metros exigido no `kf_a` |
+| a maquete **afundou**, nível da água subiu (poa1) | faixa de água aberta estreita demais: sem espaço de corrida o modelo sobe o nível em vez de formar onda | faixa ≥ 1/3 da piscina + base parafusada no fundo, que não flutua nem afunda |
+| **câmeras e caixas de equipamento** arrastadas pela água | a palavra **"scenery"** em contexto de set significa o CENÁRIO do estúdio, não a maquete | escopo explícito: só a maquete quebra; equipamento nunca entra na água |
+| destruição atropelada | 15s em plano único é a configuração mais difícil | **10s** |
+
+**Regra de causalidade** (a de maior efeito — nenhum prompt anterior tinha isso):
+
+> No building is damaged, cracked, displaced or collapsed until the water physically touches it.
+> Damage appears ONLY where the water has already passed; everything ahead of the water line stays
+> perfectly intact, upright and dry until the water reaches it.
+
+**Os três checks do `kf_a`** — fazer antes de gastar crédito:
+
+1. A maquete é reconhecível como a foto?
+2. A faixa de água aberta está num lado só **e ocupa pelo menos um terço da piscina**?
+3. Existe **vão visível** (deck, corrimão, barreira) entre equipe/equipamento e a borda da maquete?
+
 ## O que ainda falha na B
 
 - A onda sai **mais baixa** que o pedido ("significantly taller than the miniature buildings").

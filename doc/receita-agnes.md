@@ -58,6 +58,21 @@ A para B para C*.
 - Data URI base64 funciona nos keyframes, apesar da doc dizer que exige URL pública.
 - ~34% de HTTP 503 na geração; o script já faz retry com backoff.
 
+## Placar do movimento: 0 de 5
+
+Cinco tentativas de **vídeo** na Agnes, cinco degenerações diferentes: 2 keyframes substituíram os
+prédios por casinhas genéricas (2x); 3 keyframes produziram caixas gigantes flutuando e uma "onda
+feita de coisas" (2x); e a versão com fragmentos pequenos virou um tapete uniforme de pedrinhas,
+com a maquete sumida e uma pessoa dentro da piscina.
+
+As caixas gigantes tinham causa nomeável: o keyframe do "depois" dizia **"chunks of handcrafted
+scenery"**, e *scenery* em linguagem de set é o **cenário do estúdio** — o modelo passou a arrastar
+câmeras, refletores e flight cases. Corrigido em todos os prompts, mas o resto da degeneração
+permaneceu.
+
+**Recomendação:** usar a Agnes só para gerar keyframes (onde ela acerta quase sempre) e deixar o
+movimento com o Kling. Decisão do usuário ainda em aberto.
+
 ## Onde a Agnes ganha
 
 Custo zero e keyframes controlados: a maquete sai fiel à referência porque cada frame é

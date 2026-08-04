@@ -65,6 +65,13 @@ O poll longo do CLI cai sozinho (`MCP error -32001` / `fetch failed`) enquanto o
 normal — 3 de 9 jobs. O job é **pago e não cancela**: grave a resposta crua antes de qualquer
 parse e baixe o MP4 na hora (as URLs expiram em 24h). `scripts/render_kling.sh` já faz isso.
 
+## Placar real (não prometer mais que isso)
+
+Efeito **onda**: 2 de 4 imagens de referência renderizaram um clipe bom, e só depois das correções
+de causalidade, geometria do `kf_a` e escopo da destruição. O achado dos dois estágios está sólido;
+"a receita entrega um clipe bom" não é garantido — confira os frames sempre.
+Vídeo na **Agnes**: 0 de 5. Ela serve para gerar keyframes, não movimento.
+
 ## O que ainda sai torto (avisar, não esconder)
 
 - A onda sai mais baixa que o "significantly taller than the miniature buildings" do guia.

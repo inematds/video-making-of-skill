@@ -75,6 +75,14 @@ Receitas detalhadas, com as falhas medidas de cada um: `doc/receita-kling.md` e
 `doc/receita-agnes.md`. A variante com multi-shot e água em slow motion (boa, mas viola o
 guia): `doc/variante-kling-v2.md`.
 
+## Placar honesto
+
+Efeito **onda**, Kling: **2 de 4** imagens de referência renderizaram um clipe bom — e só depois das
+correções de causalidade, geometria do `kf_a` e escopo da destruição (`doc/receita-kling.md`).
+Vídeo na **Agnes**: **0 de 5** — ela acerta os keyframes, não o movimento (`doc/receita-agnes.md`).
+A descoberta dos dois estágios acima está sustentada pelo teste A vs B; "a receita entrega um clipe
+bom" não é garantido.
+
 ## Regras que custaram caro
 
 - **Prompt sempre em inglês.** Em PT a Agnes bloqueia prompt legítimo com HTTP 400.
@@ -86,6 +94,12 @@ guia): `doc/variante-kling-v2.md`.
 - **A geometria manda mais que o texto.** "A onda vem do lado da água aberta" não adianta se o
   `kf_a` mostra a maquete como ilha cercada de água: sai onda de dois lados. A maquete tem que
   encostar em uma borda, com uma faixa larga de água aberta num lado só.
+- **Causalidade tem que ser dita.** "Nenhum prédio é danificado até a água tocá-lo; o dano aparece
+  só onde a água já passou" — sem essa regra espacial a destruição acontece antes da onda chegar.
+- **"Scenery" significa o cenário do ESTÚDIO**, não a maquete. Escrever "chunks of handcrafted
+  scenery" fez o modelo arrastar câmeras, refletores e flight cases para dentro da água.
+- **"Tank" convoca um tanque de guerra.** Apareceu um blindado na piscina em duas gerações
+  seguidas. Use `effects pool` / `water basin`.
 - **Kling: sempre `--poll 0` + `query_tasks`.** O poll longo cai (3 de 9 jobs) enquanto o job
   pago termina normal. Grave o `generation_id` antes de qualquer parse.
 

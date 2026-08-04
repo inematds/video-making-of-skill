@@ -26,9 +26,11 @@ LOCK_FIM = ("Build ONLY what is in the reference image, as a handcrafted photore
 RIGS = {
     'onda': (
         "The miniature sits inside a huge reinforced practical wave tank, with high-capacity water pumps, "
-        "thick hoses and a wave generator. The tank has a wide open stretch of deep water on ONE side only, "
+        "thick hoses and a wave generator. The pool has a wide open stretch of deep water on ONE side only, "
         "with no miniature in it; that open-water side is the wave generator side, and the miniature sits "
-        "against the opposite edge. ",
+        "against the opposite edge. That open-water lane is wide — it takes up at least a third of the pool, "
+        "enough run-up for a full wave to build. The miniature stands on a rigid platform bolted to the pool "
+        "floor at a fixed height above the water line: it never floats, sinks or tilts. ",
         "The miniature is intact and dry, crew making final adjustments from the deck, tank water still calm."),
     'fogo': (
         "The miniature sits on a fireproof effects stage with gas fire bars, propane lines, flame trenches, "
@@ -53,8 +55,7 @@ SET = ("Ultra-realistic behind-the-scenes iPhone photo on a blockbuster film sou
        "crew members in black t-shirts. Handheld wide shot from a dry elevated platform 10-15 meters away, "
        "safety barrier in frame, the whole miniature and part of the production set visible. Documentary look, "
        "real production footage, not a polished movie shot. ")
-SEGURANCA = ("Every crew member stands on the dry deck outside the effects zone, behind the safety barrier, "
-             "with dry shoes and dry clothes; nobody is inside the effects zone. ")
+SEGURANCA = ("Every crew member and every piece of equipment stands on the dry deck OUTSIDE the effects zone, behind the safety barrier, with dry shoes and dry clothes. A clear empty gap of several meters — deck, railing and barrier — separates the nearest person or camera from the edge of the miniature; nobody stands on, beside or over the miniature, and nothing overhangs it. ")
 FISICA = ("Every object obeys gravity and stays in contact with the ground, the water or its own base, and the "
           "air above the effects zone is completely empty and clear. ")
 

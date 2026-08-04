@@ -78,6 +78,12 @@ sozinho enquanto o job termina normal (3 de 9 jobs). O job é **pago e não canc
 resposta crua antes de qualquer parse e baixe o MP4 na hora (URLs expiram em 24h).
 `scripts/render_kling.sh` já faz isso.
 
+## Placar real (não prometer mais que isso)
+
+Só o efeito **onda** foi executado, e mesmo nele: 2 de 4 imagens de referência renderizaram um
+clipe bom, depois das correções de causalidade, geometria do `kf_a` e escopo da destruição.
+Vídeo na **Agnes**: 0 de 5 — ela serve para gerar keyframes, não movimento.
+
 ## O que esperar
 
 Testado de ponta a ponta no efeito **onda** (~15 clipes, dois provedores). Os outros rigs
