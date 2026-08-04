@@ -16,8 +16,9 @@ sísmica, barras de fogo…), e o efeito destrói a maquete enquanto a equipe fi
 |---|---|
 | ![maquete](guia/assets/maquete.jpg) | ![destruição](guia/assets/destruicao.jpg) |
 
-Vídeo de 15s gerado por esta receita: [`guia/assets/v2-kling.mp4`](guia/assets/v2-kling.mp4)
-(ou assista no [guia](https://inematds.github.io/video-making-of-skill/guia/#video)).
+Os dois clipes que funcionaram, ambos de 15s a partir da mesma foto — [receita B](guia/assets/b-kling.mp4)
+(plano único, fiel ao guia) e [variante v2](guia/assets/v2-kling.mp4) (multi-shot com revelação do estúdio).
+Assista no [guia](https://inematds.github.io/video-making-of-skill/guia/#video).
 
 Baseado no guia AVCC de destruição de miniatura em tanque de ondas (`doc/`), corrigido pelo
 que foi **medido** gerando ~15 clipes reais em dois provedores.
