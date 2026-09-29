@@ -1,14 +1,15 @@
 <!DOCTYPE html>
+
 <!-- Landing + guia · padrao INEMA (projetos-landing-guia) -->
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Making Of — a foto vira maquete e o efeito destrói</title>
-<meta name="description" content="Transforma uma foto de referência num vídeo behind-the-scenes de efeito prático: o assunto da foto vira maquete dentro de um rig de estúdio e a simulação destrói a maquete. Kling e Agnes, receitas medidas.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<meta content="Transforma uma foto de referência num vídeo behind-the-scenes de efeito prático: o assunto da foto vira maquete dentro de um rig de estúdio e a simulação destrói a maquete. Kling e Agnes, receitas medidas." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet"/>
 <style>
   :root{
     --bg:#0c0c10; --bg2:#14141b; --card:#16161e; --line:#272730;
@@ -91,213 +92,194 @@
   footer{padding:46px 0;text-align:center;color:var(--mut);font-size:.9rem}
   .pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:.3em .8em;font-size:.78rem;color:var(--mut);margin:0 4px}
 </style>
-</head>
-<body>
-
+<link href="https://inematds.github.io/video-making-of-skill/guia/" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/video-making-of-skill/guia/en/" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/video-making-of-skill/guia/es/" hreflang="es" rel="alternate"/></head>
+<body><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="./" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="en/" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="es/" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <nav><div class="wrap">
-  <a class="brand" href="#top"><span class="emoji">🌊</span> Making Of</a>
-  <span class="sep">|</span>
-  <span class="clubpro">
-    <a class="inema" href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a>
-    <span class="sep">-</span>
-    <a class="pro" href="https://inema.pro" target="_blank" rel="noopener">PRO</a>
-  </span>
-  <div class="links">
-    <a class="sec" href="#oque">O que é</a>
-    <a class="sec" href="#fluxo">Como funciona</a>
-    <a class="sec" href="#pre">Pré-requisitos</a>
-    <a class="sec" href="#guia">Guia de uso</a>
-    <a class="sec" href="#exemplos">Exemplos</a>
-    <a class="sec" href="#roadmap">Roadmap</a>
-    <button class="tgl" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
-    <a class="btn" href="https://github.com/inematds/video-making-of-skill" target="_blank" rel="noopener">GitHub</a>
-  </div>
+<a class="brand" href="#top"><span class="emoji">🌊</span> Making Of</a>
+<span class="sep">|</span>
+<span class="clubpro">
+<a class="inema" href="https://inema.club" rel="noopener" target="_blank">INEMA.CLUB</a>
+<span class="sep">-</span>
+<a class="pro" href="https://inema.pro" rel="noopener" target="_blank">PRO</a>
+</span>
+<div class="links">
+<a class="sec" href="#oque">O que é</a>
+<a class="sec" href="#fluxo">Como funciona</a>
+<a class="sec" href="#pre">Pré-requisitos</a>
+<a class="sec" href="#guia">Guia de uso</a>
+<a class="sec" href="#exemplos">Exemplos</a>
+<a class="sec" href="#roadmap">Roadmap</a>
+<button aria-label="Alternar tema" class="tgl" id="themeToggle" title="Alternar tema">🌙</button>
+<a class="btn" href="https://github.com/inematds/video-making-of-skill" rel="noopener" target="_blank">GitHub</a>
+</div>
 </div></nav>
-
 <header class="hero" id="top">
-  <div class="glow"></div>
-  <div class="wrap">
-    <div>
-      <span class="chip">Foto → maquete → efeito prático</span>
-      <h1>Sua cidade vira <span class="amb">maquete</span> — e o efeito destrói ela na frente da câmera</h1>
-      <p class="lead">Uma foto entra; sai um vídeo de bastidores ultra-realista: o assunto da foto reconstruído
+<div class="glow"></div>
+<div class="wrap">
+<div>
+<span class="chip">Foto → maquete → efeito prático</span>
+<h1>Sua cidade vira <span class="amb">maquete</span> — e o efeito destrói ela na frente da câmera</h1>
+<p class="lead">Uma foto entra; sai um vídeo de bastidores ultra-realista: o assunto da foto reconstruído
       como maquete dentro de um rig de estúdio, blue screen e equipe em quadro, e uma onda (ou fogo, terremoto,
       explosão, neve) destruindo tudo em plano único. Duas receitas medidas em ~15 clipes reais.</p>
-      <div class="cta">
-        <a class="btn" href="#guia">Começar o guia</a>
-        <a class="btn ghost" href="https://github.com/inematds/video-making-of-skill" target="_blank" rel="noopener">Ver no GitHub</a>
-      </div>
-    </div>
-    <figure><img src="assets/hero.png" alt="Maquete de cidade dentro de um tanque de ondas de estúdio"></figure>
-  </div>
+<div class="cta">
+<a class="btn" href="#guia">Começar o guia</a>
+<a class="btn ghost" href="https://github.com/inematds/video-making-of-skill" rel="noopener" target="_blank">Ver no GitHub</a>
+</div>
+</div>
+<figure><img alt="Maquete de cidade dentro de um tanque de ondas de estúdio" src="assets/hero.png"/></figure>
+</div>
 </header>
-
 <section id="oque"><div class="wrap">
-  <span class="chip">O que é</span>
-  <h2>O making of do efeito, não o efeito</h2>
-  <p class="sub">O espectador não vê um filme-catástrofe: vê a equipe filmando a destruição de uma maquete.
+<span class="chip">O que é</span>
+<h2>O making of do efeito, não o efeito</h2>
+<p class="sub">O espectador não vê um filme-catástrofe: vê a equipe filmando a destruição de uma maquete.
   É isso que faz o vídeo parecer real.</p>
-  <div class="grid g3">
-    <div class="card"><h3>🏗️ Maquete fiel à sua foto</h3><p>A referência controla arquitetura, fachadas, cores e
+<div class="grid g3">
+<div class="card"><h3>🏗️ Maquete fiel à sua foto</h3><p>A referência controla arquitetura, fachadas, cores e
     proporções — prédio a prédio. Nada de marcos inventados.</p></div>
-    <div class="card"><h3>🌊 Efeito com física de verdade</h3><p>A água é massa real em escala real; só os prédios
+<div class="card"><h3>🌊 Efeito com física de verdade</h3><p>A água é massa real em escala real; só os prédios
     são maquete. Destroços com peso, atrito e colisão — não flutuando sem gravidade.</p></div>
-    <div class="card"><h3>🎬 Plano único de bastidores</h3><p>Uma tomada contínua de iPhone a 10-15 m, com tanque,
+<div class="card"><h3>🎬 Plano único de bastidores</h3><p>Uma tomada contínua de iPhone a 10-15 m, com tanque,
     barreira, gruas, bombas e equipe seca no quadro o tempo todo.</p></div>
-  </div>
+</div>
 </div></section>
-
 <section id="video"><div class="wrap">
-  <span class="chip">Resultado</span>
-  <h2>15 segundos, a mesma foto, duas receitas</h2>
-  <p class="sub">Referência: uma foto aérea da orla de Porto Alegre. Saída: a mesma orla como maquete sendo
+<span class="chip">Resultado</span>
+<h2>15 segundos, a mesma foto, duas receitas</h2>
+<p class="sub">Referência: uma foto aérea da orla de Porto Alegre. Saída: a mesma orla como maquete sendo
   varrida por uma onda prática. Kling v3.0, áudio nativo nos dois.</p>
-  <div class="grid g2">
-    <figure style="margin:0">
-      <video src="assets/b-kling.mp4" poster="assets/b-poster.jpg" controls playsinline preload="none"
-        style="width:100%;border-radius:16px;border:1px solid var(--line);display:block"></video>
-      <figcaption style="color:var(--mut);font-size:.9rem;margin-top:10px"><strong>Receita B</strong> — plano
+<div class="grid g2">
+<figure style="margin:0">
+<video controls="" playsinline="" poster="assets/b-poster.jpg" preload="none" src="assets/b-kling.mp4" style="width:100%;border-radius:16px;border:1px solid var(--line);display:block"></video>
+<figcaption style="color:var(--mut);font-size:.9rem;margin-top:10px"><strong>Receita B</strong> — plano
       único contínuo, sem cortes, fiel ao guia AVCC. A onda vem do lado da água aberta e atravessa
       lateralmente.</figcaption>
-    </figure>
-    <figure style="margin:0">
-      <video src="assets/v2-kling.mp4" poster="assets/v2-poster.jpg" controls playsinline preload="none"
-        style="width:100%;border-radius:16px;border:1px solid var(--line);display:block"></video>
-      <figcaption style="color:var(--mut);font-size:.9rem;margin-top:10px"><strong>Variante v2</strong> —
+</figure>
+<figure style="margin:0">
+<video controls="" playsinline="" poster="assets/v2-poster.jpg" preload="none" src="assets/v2-kling.mp4" style="width:100%;border-radius:16px;border:1px solid var(--line);display:block"></video>
+<figcaption style="color:var(--mut);font-size:.9rem;margin-top:10px"><strong>Variante v2</strong> —
       multi-shot com revelação do estúdio e água em alta velocidade. Melhor peso de água, mas usa cortes, que o
       guia proíbe.</figcaption>
-    </figure>
-  </div>
-  <figure style="margin:26px 0 0;max-width:640px">
-    <video src="assets/hibrido-kling.mp4" poster="assets/hibrido-poster.jpg" controls playsinline preload="none"
-      style="width:100%;border-radius:16px;border:1px solid var(--line);display:block"></video>
-    <figcaption style="color:var(--mut);font-size:.9rem;margin-top:10px"><strong>Híbrido</strong> — começa na
+</figure>
+</div>
+<figure style="margin:26px 0 0;max-width:640px">
+<video controls="" playsinline="" poster="assets/hibrido-poster.jpg" preload="none" src="assets/hibrido-kling.mp4" style="width:100%;border-radius:16px;border:1px solid var(--line);display:block"></video>
+<figcaption style="color:var(--mut);font-size:.9rem;margin-top:10px"><strong>Híbrido</strong> — começa na
     cidade real e só depois revela que é uma maquete no estúdio. Saiu por acidente: o Kling ancora o primeiro
     frame na imagem dada, então partir da foto crua produz esse arco sozinho.</figcaption>
-  </figure>
+</figure>
 </div></section>
-
 <section id="fluxo"><div class="wrap">
-  <span class="chip">Como funciona</span>
-  <h2>Dois estágios — e a ordem é o segredo</h2>
-  <p class="sub">O gerador de vídeo precisa receber a <strong>maquete já montada</strong> como primeiro frame.
+<span class="chip">Como funciona</span>
+<h2>Dois estágios — e a ordem é o segredo</h2>
+<p class="sub">O gerador de vídeo precisa receber a <strong>maquete já montada</strong> como primeiro frame.
   Com a foto crua ele entende “transformar esta foto”: a cidade real se dissolve em cubos e a onda nunca aparece.</p>
-  <div class="flow">
-    <span>foto de referência</span><span class="arr">→</span>
-    <span>keyframe A (maquete no rig)</span><span class="arr">→</span>
-    <span>vídeo 15s</span><span class="arr">→</span>
-    <span>MP4</span>
-  </div>
-  <div class="grid g2" style="margin-top:26px">
-    <div class="card"><h3>🎥 Kling <span style="color:var(--mut);font-size:.8rem">v3.0</span></h3>
-      <p>Image-to-video de um frame + texto. Melhor física de água, plano contínuo e áudio no mesmo passe.
+<div class="flow">
+<span>foto de referência</span><span class="arr">→</span>
+<span>keyframe A (maquete no rig)</span><span class="arr">→</span>
+<span>vídeo 15s</span><span class="arr">→</span>
+<span>MP4</span>
+</div>
+<div class="grid g2" style="margin-top:26px">
+<div class="card"><h3>🎥 Kling <span style="color:var(--mut);font-size:.8rem">v3.0</span></h3>
+<p>Image-to-video de um frame + texto. Melhor física de água, plano contínuo e áudio no mesmo passe.
       Roda na assinatura Pro/SVIP (créditos do plano).</p></div>
-    <div class="card"><h3>🖼️ Agnes <span style="color:var(--mut);font-size:.8rem">US$ 0</span></h3>
-      <p>Só tem <code>mode: keyframes</code> (2 a 3 imagens) — não é image-to-video. Serve para gerar o keyframe A
+<div class="card"><h3>🖼️ Agnes <span style="color:var(--mut);font-size:.8rem">US$ 0</span></h3>
+<p>Só tem <code>mode: keyframes</code> (2 a 3 imagens) — não é image-to-video. Serve para gerar o keyframe A
       fiel e para iterar composição de graça antes de gastar crédito.</p></div>
-  </div>
+</div>
 </div></section>
-
 <section id="pre"><div class="wrap">
-  <span class="chip">Pré-requisitos</span>
-  <h2>O que precisa estar no lugar</h2>
-  <p class="sub">Duas credenciais e o ffmpeg. Nada é instalado por este projeto.</p>
-  <div class="grid g3">
-    <div class="card"><h3>Chave da Agnes</h3><p>Gera o keyframe A e os vídeos grátis.</p><pre><span class="c"># AGNES_API_KEY em:</span>
+<span class="chip">Pré-requisitos</span>
+<h2>O que precisa estar no lugar</h2>
+<p class="sub">Duas credenciais e o ffmpeg. Nada é instalado por este projeto.</p>
+<div class="grid g3">
+<div class="card"><h3>Chave da Agnes</h3><p>Gera o keyframe A e os vídeos grátis.</p><pre><span class="c"># AGNES_API_KEY em:</span>
 <span class="s">~/projetos/agnes-nei/.env</span></pre></div>
-    <div class="card"><h3>CLI do Kling</h3><p>Assinatura Pro/SVIP, logada.</p><pre><span class="k">kling</span> who_am_i  <span class="c"># confirma a conta</span></pre></div>
-    <div class="card"><h3>ffmpeg</h3><p>Para medir e conferir a saída — o <code>size</code> da API mente.</p><pre><span class="k">ffprobe</span> -v error -show_entries \
+<div class="card"><h3>CLI do Kling</h3><p>Assinatura Pro/SVIP, logada.</p><pre><span class="k">kling</span> who_am_i  <span class="c"># confirma a conta</span></pre></div>
+<div class="card"><h3>ffmpeg</h3><p>Para medir e conferir a saída — o <code>size</code> da API mente.</p><pre><span class="k">ffprobe</span> -v error -show_entries \
   format=duration filme.mp4</pre></div>
-  </div>
+</div>
 </div></section>
-
 <section id="guia"><div class="wrap">
-  <span class="chip">Guia de uso · passo a passo</span>
-  <h2>Da foto ao MP4 em dois comandos</h2>
-  <p class="sub">O trabalho de verdade está no passo 2: escrever o <code>--lock</code> olhando a foto.</p>
-
-  <div class="step"><div class="b">1</div><div>
-    <h3>Escolha a foto de referência</h3>
-    <p>Qualquer foto do assunto: cidade, orla, prédio, produto. Ela define a arquitetura da maquete —
+<span class="chip">Guia de uso · passo a passo</span>
+<h2>Da foto ao MP4 em dois comandos</h2>
+<p class="sub">O trabalho de verdade está no passo 2: escrever o <code>--lock</code> olhando a foto.</p>
+<div class="step"><div class="b">1</div><div>
+<h3>Escolha a foto de referência</h3>
+<p>Qualquer foto do assunto: cidade, orla, prédio, produto. Ela define a arquitetura da maquete —
     e o formato do vídeo sai do formato do keyframe, então decida 16:9 ou 9:16 aqui.</p>
 <pre><span class="k">cd</span> ~/projetos/video-making-of-skill  <span class="c"># fotos de exemplo em doc/</span></pre>
-  </div></div>
-
-  <div class="step"><div class="b">2</div><div>
-    <h3>Gere o keyframe A — a maquete montada no rig</h3>
-    <p>O <code>--lock</code> você escreve <strong>olhando a foto</strong>, em inglês, elemento por elemento.
+</div></div>
+<div class="step"><div class="b">2</div><div>
+<h3>Gere o keyframe A — a maquete montada no rig</h3>
+<p>O <code>--lock</code> você escreve <strong>olhando a foto</strong>, em inglês, elemento por elemento.
     Sem ele o gerador inventa quarteirões genéricos. Escolha o rig em <code>--efeito</code>:
     <code>onda</code>, <code>fogo</code>, <code>terremoto</code>, <code>explosao</code>, <code>neve</code>.</p>
 <pre><span class="k">scripts/kf_a.py</span> doc/poa2.jpg out/kf_a.png \
   --ratio 16x9 --efeito onda \
   --lock <span class="s">"the same orange-brick power-plant hall, the same tall slender chimney,
           the same white apartment blocks behind the treeline, the same curved promenade"</span></pre>
-  </div></div>
-
-  <div class="step"><div class="b">3</div><div>
-    <h3>Confira a imagem antes de gastar crédito</h3>
-    <p>Duas perguntas: a maquete é reconhecível como a foto? E ela está <strong>encostada em uma borda</strong>,
+</div></div>
+<div class="step"><div class="b">3</div><div>
+<h3>Confira a imagem antes de gastar crédito</h3>
+<p>Duas perguntas: a maquete é reconhecível como a foto? E ela está <strong>encostada em uma borda</strong>,
     com água aberta de <strong>um lado só</strong>? Se virar ilha cercada de água, a onda vem de dois lados —
     texto não corrige geometria. Regenere.</p>
 <pre><span class="c"># abra out/kf_a.png e olhe. Este passo economiza créditos.</span></pre>
-  </div></div>
-
-  <div class="step"><div class="b">4</div><div>
-    <h3>Renderize com o Kling</h3>
-    <p>Plano único, sem frame final obrigatório, áudio nativo. O script submete com <code>--poll 0</code> e
+</div></div>
+<div class="step"><div class="b">4</div><div>
+<h3>Renderize com o Kling</h3>
+<p>Plano único, sem frame final obrigatório, áudio nativo. O script submete com <code>--poll 0</code> e
     busca o resultado por <code>query_tasks</code> — o poll longo do CLI cai sozinho.</p>
 <pre><span class="k">scripts/render_kling.sh</span> out/kf_a.png out/filme.mp4 \
   prompts/avcc-ondas-16x9-en.txt</pre>
-  </div></div>
-
-  <div class="step"><div class="b">5</div><div>
-    <h3>Ou renderize de graça com a Agnes</h3>
-    <p>Ela interpola entre keyframes, então precisa de três: A intacto, <strong>B no meio do impacto</strong> e
+</div></div>
+<div class="step"><div class="b">5</div><div>
+<h3>Ou renderize de graça com a Agnes</h3>
+<p>Ela interpola entre keyframes, então precisa de três: A intacto, <strong>B no meio do impacto</strong> e
     C arrasado. Com só dois ela morfa — a onda some e os prédios são substituídos por casinhas genéricas.</p>
 <pre><span class="k">scripts/render_agnes.py</span> --kf A.png B.png C.png \
   --prompt-file prompts/avcc-ondas-16x9-en.txt \
   --out out/filme.mp4 --ratio 16x9</pre>
-  </div></div>
+</div></div>
 </div></section>
-
 <section id="exemplos"><div class="wrap">
-  <span class="chip">Exemplos</span>
-  <h2>O keyframe e o resultado</h2>
-  <p class="sub">Mesma foto de origem: a orla de Porto Alegre com a chaminé da Usina do Gasômetro.</p>
-  <div class="ex">
-    <figure><img src="assets/maquete.jpg" alt="Maquete da orla dentro do tanque de ondas">
-      <figcaption>Keyframe A — a maquete montada no tanque, com blue screen, gruas e equipe. Gerado na Agnes,
+<span class="chip">Exemplos</span>
+<h2>O keyframe e o resultado</h2>
+<p class="sub">Mesma foto de origem: a orla de Porto Alegre com a chaminé da Usina do Gasômetro.</p>
+<div class="ex">
+<figure><img alt="Maquete da orla dentro do tanque de ondas" src="assets/maquete.jpg"/>
+<figcaption>Keyframe A — a maquete montada no tanque, com blue screen, gruas e equipe. Gerado na Agnes,
       custo zero.</figcaption></figure>
-    <figure><img src="assets/destruicao.jpg" alt="A onda destruindo a maquete">
-      <figcaption>Frame do vídeo — a onda atravessa lateralmente, os prédios quebram em pedaços e são
+<figure><img alt="A onda destruindo a maquete" src="assets/destruicao.jpg"/>
+<figcaption>Frame do vídeo — a onda atravessa lateralmente, os prédios quebram em pedaços e são
       arrastados. Equipe seca no deck.</figcaption></figure>
-  </div>
+</div>
 </div></section>
-
 <section id="roadmap"><div class="wrap">
-  <span class="chip">Roadmap</span>
-  <h2>O que está medido e o que não está</h2>
-  <p class="sub">Honestidade sobre o que foi executado de verdade.</p>
-  <div class="phase"><div class="tag">Pronto</div><div class="d"><strong>Efeito onda, Kling e Agnes</strong>
-    <span>~15 clipes gerados nos dois provedores, 16:9 e 9:16, com teste controlado provando que o frame inicial
+<span class="chip">Roadmap</span>
+<h2>O que está medido e o que não está</h2>
+<p class="sub">Honestidade sobre o que foi executado de verdade.</p>
+<div class="phase"><div class="tag">Pronto</div><div class="d"><strong>Efeito onda, Kling e Agnes</strong>
+<span>~15 clipes gerados nos dois provedores, 16:9 e 9:16, com teste controlado provando que o frame inicial
     é o que decide o resultado.</span></div></div>
-  <div class="phase"><div class="tag">Não testado</div><div class="d"><strong>Rigs de fogo, terremoto, explosão e neve</strong>
-    <span>Implementados a partir da mesma estrutura, mas nunca executados. Na primeira vez, gere só o keyframe A
+<div class="phase"><div class="tag">Não testado</div><div class="d"><strong>Rigs de fogo, terremoto, explosão e neve</strong>
+<span>Implementados a partir da mesma estrutura, mas nunca executados. Na primeira vez, gere só o keyframe A
     e confira antes de soltar o vídeo.</span></div></div>
-  <div class="phase"><div class="tag">Em aberto</div><div class="d"><strong>Onda mais alta e segunda surge legível</strong>
-    <span>A onda sai mais baixa que o pedido e o impacto é rápido demais. Hipótese: dar mais faixa de água
+<div class="phase"><div class="tag">Em aberto</div><div class="d"><strong>Onda mais alta e segunda surge legível</strong>
+<span>A onda sai mais baixa que o pedido e o impacto é rápido demais. Hipótese: dar mais faixa de água
     aberta no keyframe A, para a onda ter espaço de corrida.</span></div></div>
 </div></section>
-
 <footer>
-  <div class="wrap">
-    <div class="pill">Kling v3.0</div><div class="pill">Agnes</div><div class="pill">Python + bash</div><div class="pill">ffmpeg</div>
-    <p style="margin-top:18px">Making Of · receitas medidas, não sugeridas ·
+<div class="wrap">
+<div class="pill">Kling v3.0</div><div class="pill">Agnes</div><div class="pill">Python + bash</div><div class="pill">ffmpeg</div>
+<p style="margin-top:18px">Making Of · receitas medidas, não sugeridas ·
       <a href="https://github.com/inematds/video-making-of-skill">inematds/video-making-of-skill</a> ·
       <a href="https://inema.club">INEMA.CLUB</a></p>
-  </div>
+</div>
 </footer>
-
 <script>
   (function(){
     var KEY='video-making-of-skill-theme';

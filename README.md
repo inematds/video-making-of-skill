@@ -1,5 +1,7 @@
 # video-making-of-skill
 
+**🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
+
 ![Making Of](capa/capa.png)
 
 ## 📖 Guia de uso
